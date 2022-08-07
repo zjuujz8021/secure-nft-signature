@@ -97,9 +97,9 @@ index = ArrayUtils.unsafeWriteBytes(index, order.staticExtradata);
 index = ArrayUtils.unsafeWriteAddress(index, order.paymentToken);
 ```
 
-for example, if the parameters compose of 3 components: `(address, bytes[])`, and the parameters are `(0x9a534628b4062e123ce7ee2222ec20b86e16ca8f, "0xc098")`, the aggregated bytes would be `0x0000000000000000000000009a534628b4062e123ce7ee2222ec20b86e16ca8fc098`, just `address` + `bytes[]`. Seems to be easy and clear, right?
+For example, if the parameters compose of 3 components: `(address, bytes[])`, and the parameters are `(0x9a534628b4062e123ce7ee2222ec20b86e16ca8f, "0xc098")`, the aggregated bytes would be `0x0000000000000000000000009a534628b4062e123ce7ee2222ec20b86e16ca8fc098`, just `address` + `bytes[]`. Seems to be easy and clear, right?
 
-Now, consider a more complex example, the structure parameters is `(address, bytes[], byte[])`.
+Now, consider a more complex example, the structure of parameters is `(address, bytes[], byte[])`.
 
 parameter 1 is `(0x9a534628b4062e123ce7ee2222ec20b86e16ca8f, "0xab", "0xcdef")`.
 
@@ -134,7 +134,7 @@ This is because there are many variable-length components in the parameters, and
 The impact of the vulneribility is that exploiters (if possible) could control the victim's account to execute some malicious behavior. The detailed analysis of the vulneribility is [here](https://nft.mirror.xyz/VdF3BYwuzXgLrJglw5xF6CHcQfAVbqeJVtueCr4BUzs)
 
 Both of the two risks mentioned in this section all violate the Horton Principle, as the NFT contract does not sign the minter, and the Wyvern contract signs a structureless parameters so that the meaning of the action could be modified while the presentation (saying) of the parameters still remains.
- 
+
 ## 4. Summary And Suggestions
 
 1. Be careful about double-use problem when designing the signature verification system
