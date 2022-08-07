@@ -6,17 +6,13 @@
 
 Digital signature is widely used in smart contracts for authentication and Integrity, especially in order-book NFT marketplaces cause it helps save transaction costs to match an order. However, the convenience also introduces some risks in the NFT marketplaces. Today, we'd like to talk about the risks of digital signature in the NFT ecosystem.
 
-## 2. Digital Signature
-
-
-
 ## 2. Application of Digital Signature in NFT Markets
 
-Digital signature is applied in the NFT ecosystem with mainly 2 aspects, the below sections will describe the technology detail of them.
+Considering digital signature can tell what the message mean, and from who the message is sent, digital signature is widely applied in the NFT ecosystem, not only in NFT token contracts e.g. for whitelist mint, but also in NFT marketplaces for order validation. the rest of this section will talk about the usability of digital signature.
 
 ### 2.1. Order Verification
 
-The NFT marketplaces plays an important role in the NFT ecosystem as they provides the trading functionality for the NFTs.   As each NFT token is non-fungible, the automated market maker (AMM) trading policy which is widely used in fungible tokens (i.e. ERC-20 tokens) is not applicable anymore, thus, most NFT marketplaces, e.g. OpenSea, LooksRare, and X2Y2  adopts 
+The NFT marketplaces plays an important role in the NFT ecosystem as they provides the trading functionality for the NFTs.   As each NFT token is non-fungible, the automated market maker (AMM) trading policy which adopted in fungible tokens (i.e. ERC-20 tokens) is not applicable anymore, thus, most NFT marketplaces, e.g. OpenSea, LooksRare, and X2Y2 take order-book model as their trading policy.
 
 ## 2. Security Issues
 
