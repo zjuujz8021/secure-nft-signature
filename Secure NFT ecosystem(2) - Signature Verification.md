@@ -68,13 +68,16 @@ order-book trading policy is one of the most popular trading policies in traditi
 
 ![OpenSea Trading Process](./image/orderbook.png)
 
-The seller signs a seller order and stores it on OpenSea's server, the buyer could retrieve the signed sell order from OpenSea's server, and then invokes the buy order transaction with the signed sell order. The marketplace contract will validate the order to make sure the sell order is indeedly signed by the seller and complete the trade process.
+The seller signs a seller order and stores it on OpenSea's server, the buyer could retrieve the signed sell order from OpenSea's server, and then invokes the buy order transaction with the signed sell order as parameters. The marketplace contract will validate the order to make sure the sell order is indeedly signed by the seller and complete the trade process.
 
 **<center> Fig 1. OpenSea trading Process </center>**
 
 
-## 2. Security Issues
+## 3. Security Issues
 
 There's no doubt that the digital signature could help save a lot of gas in the NFT ecosystem: Only 1 transaction, instead of 2, is needed to complete a whitelist mint or trade. However, such a covenient method also has some risks.
 
 In the early of 2022, researchers disclose a potential vulnerability of OpenSea marketplace contract (version: wyvern 2.2), which implements the core functionality of NFTs trading. 
+
+
+## 4. Summary And Suggestions
