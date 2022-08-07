@@ -67,10 +67,11 @@ The NFT marketplaces play an important role in the NFT ecosystem as they provide
 order-book trading policy is one of the most popular trading policies in traditional finance, e.g. stock markets and future markets. The policy is simple: You have a maker, aka a person who wants to sell an asset for a specific price, and you have a taker, aka a person who wants to buy it and agrees with seller's price, then the order matches. The process is same in the orderbook NFT marketplaces, the only difference is the process of order offering: the NFT marketplaces use digital signature for order verification. Figure 1 describes an example of the whole trading process of one of the orderbook marketplaces: OpenSea.
 
 ![OpenSea Trading Process](./image/orderbook.png)
+**<center> Fig 1. OpenSea trading Process </center>**
 
 The seller signs a seller order and stores it on OpenSea's server, the buyer could retrieve the signed sell order from OpenSea's server, and then invokes the buy order transaction with the signed sell order as parameters. The marketplace contract will validate the order to make sure the sell order is indeedly signed by the seller and complete the trade process.
 
-**<center> Fig 1. OpenSea trading Process </center>**
+
 
 
 ## 3. Security Issues
